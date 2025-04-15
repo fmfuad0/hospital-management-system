@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Ticket</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Update Ticket</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ticket-management.html">Back to Ticket Management</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Update Ticket Details</h2>
+            <form action="update-ticket-process.html" method="POST">
+                <label for="ticket-id">Ticket ID:</label>
+                <input type="text" id="ticket-id" name="ticket-id" value="001" disabled>
+
+                <label for="seat">New Seat Number:</label>
+                <input type="text" id="seat" name="seat" required>
+
+                <label for="date">New Booking Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Update Ticket</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Airline Ticket Reservation System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

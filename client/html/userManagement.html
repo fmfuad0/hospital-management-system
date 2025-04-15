@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>User Management</h1>
+        <nav>
+            <ul>
+                <li><a href="#add-user">Add User</a></li>
+                <li><a href="#view-user">View User Profile</a></li>
+                <li><a href="#update-user">Update User Profile</a></li>
+                <li><a href="#delete-user">Delete User</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Add User -->
+    <section id="add-user">
+        <h2>Create New User Account</h2>
+        <form action="/add-user" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+
+            <button type="submit">Create Account</button>
+        </form>
+    </section>
+
+    <!-- View User Profile -->
+    <section id="view-user">
+        <h2>Your Profile</h2>
+        <p>Name: John Doe</p>
+        <p>Email: john.doe@example.com</p>
+        <a href="#update-user">Edit Profile</a> | 
+        <a href="#delete-user">Delete Account</a>
+    </section>
+
+    <!-- Update User Profile -->
+    <section id="update-user">
+        <h2>Update Your Profile</h2>
+        <form action="/update-user" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+
+            <button type="submit">Update Profile</button>
+        </form>
+    </section>
+
+    <!-- Delete User -->
+    <section id="delete-user">
+        <h2>Delete Account</h2>
+        <form action="/delete-user" method="POST">
+            <button type="submit">Delete Account</button>
+        </form>
+    </section>
+</body>
+</html>
